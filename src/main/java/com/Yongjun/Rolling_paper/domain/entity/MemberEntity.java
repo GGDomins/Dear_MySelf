@@ -23,9 +23,6 @@ public class MemberEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @OneToMany(mappedBy = "memberEntity", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private List<LetterEntity> letters = new ArrayList<>();
-
     @Column(length = 20, nullable = false)
     private String email;
 

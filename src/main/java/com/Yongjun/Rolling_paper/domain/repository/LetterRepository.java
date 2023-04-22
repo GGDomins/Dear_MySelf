@@ -12,5 +12,6 @@ import java.util.Optional;
 public interface LetterRepository extends JpaRepository<LetterEntity, Long> {
     @Override
     Optional<LetterEntity> findById(Long aLong);
+    List<LetterEntity> findByMemberEntity(MemberEntity memberEntity);
 
 }

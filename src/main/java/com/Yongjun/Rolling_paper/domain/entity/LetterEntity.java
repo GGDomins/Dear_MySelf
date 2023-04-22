@@ -17,9 +17,9 @@ public class LetterEntity {
     @Column(name = "LetterId")
     private Long id;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "MemberId")
-//    private MemberEntity memberEntity;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "MemberId")
+    private MemberEntity memberEntity;
 
 
     @Column(nullable = false)
